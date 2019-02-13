@@ -9,12 +9,35 @@ html(lang='en')
   body
     .container-fluid
       .row
-        .col Hello    
-        .col World   
-
-
-
-
+        .col
+          .alert.alert-warning.alert-dismissible.fade.show
+            strong Holy guacamole!
+            |  You should check in on some of those fields below.
+            button.close(data-dismiss='alert')
+              span × 
+        .col 
+          .alert.alert-success Hello 
+      .row
+        .col
+          span.badge.badge-primary Primary
+          span.badge.badge-secondary Secondary
+          span.badge.badge-success Success
+          span.badge.badge-danger Danger
+          span.badge.badge-warning Warning
+          span.badge.badge-info Info
+          span.badge.badge-light Light
+          span.badge.badge-dark Dark
+      
+      .row
+        .col.d-flex.justify-content-center
+          nav(aria-label='breadcrumb')
+            ol.breadcrumb
+              li.breadcrumb-item
+                a(href='#') Home
+              li.breadcrumb-item
+                a(href='#') Library
+              li.breadcrumb-item.active(aria-current='page') Data
+      
 
 
     script(src='https://code.jquery.com/jquery-3.2.1.slim.min.js', crossorigin='anonymous')

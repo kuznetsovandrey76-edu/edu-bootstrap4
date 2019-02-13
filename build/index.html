@@ -12,8 +12,28 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col">Hello </div>
-            <div class="col">World </div>
+            <div class="col">
+                <div class="alert alert-warning alert-dismissible fade show"><strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                    <button class="close" data-dismiss="alert"><span>× </span></button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="alert alert-success">Hello </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col"><span class="badge badge-primary">Primary</span><span class="badge badge-secondary">Secondary</span><span class="badge badge-success">Success</span><span class="badge badge-danger">Danger</span><span class="badge badge-warning">Warning</span><span class="badge badge-info">Info</span><span class="badge badge-light">Light</span><span class="badge badge-dark">Dark</span></div>
+        </div>
+        <div class="row">
+            <div class="col d-flex justify-content-center">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Library</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Data</li>
+                    </ol>
+                </nav>
+            </div>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
